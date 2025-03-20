@@ -46,8 +46,8 @@ This project involved analyzing a sample web server access log to identify commo
 
 -   The log file contained [216] 404 errors.
 -   The amount of unique IP addresses that accessed the server were
-    1753
--   The log file contained 9152 200 OK status codes.
+    [1753].
+-   The log file contained [9152] 200 OK status codes.
 
 ### Example Commands
 
