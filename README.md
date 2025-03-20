@@ -22,8 +22,8 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 
 ## Certifications and Training
 
--   Blue Team Level 1 (BTL1), Certified Network Security Practitioner (CNSP), and CompTIA Security+
--   Google Cybersecurity Specialization Course
+-   `Blue Team Level 1 (BTL1)`, `Certified Network Security Practitioner (CNSP)`, and `CompTIA Security+`
+-   `Google Cybersecurity Specialization Course`
 
 ## Contact
 
