@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about Threat Hunting, OSINT, Phishing Analysis, and Strengthing IT Security. This portfolio showcases my practical skills and projects related to security operations.
+Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about Threat Hunting, OSINT, Phishing Analysis, and Strengthening IT Security. This portfolio showcases my practical skills and projects related to security operations.
 
 ## Projects
 
@@ -107,7 +107,7 @@ This project demonstrates basic network scanning using the `nmap` command-line t
 ### Example Commands
 
 ```bash
-nmap -v -sS <target_IP_address>
+nmap -v -sS scanme.nmap.org
 ```
 
 ## Vulnerability Scanning and Remediation with Nessus Essentials
