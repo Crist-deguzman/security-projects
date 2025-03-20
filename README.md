@@ -44,16 +44,16 @@ This project involved analyzing a sample web server access log to identify commo
 
 ### Key Findings
 
--   The log file contained [216] 404 errors.
--   The amount of unique IP addresses that accessed the server were
+-   The log file contained [216] 404 error code.
+-   The amount of unique IP addresses that accessed the server is
     [1753].
--   The log file contained [9152] 200 OK status codes.
+-   The log file contained [9152] 200 OK status code.
 
 ### Example Commands
 
 ```bash
 grep "404" access.log | wc -l
-awk '{print $1}' access.log | sort -u
+awk '{print $1}' access.log | sort -u | wc -l
 grep "200" access.log | wc -l
 ```
 
