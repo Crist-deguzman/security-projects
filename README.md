@@ -9,13 +9,14 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 -   [Basic Log Analysis with grep](#basic-log-analysis-with-grep)
 -   [File Integrity Monitoring with sha256sum](#file-integrity-monitoring-with-sha256sum)
 -   [Basic Network Scanning with nmap](#basic-network-scanning-with-nmap)
+-   [Vulnerability Scanning and Remediation with Nessus Essentials](#vulnerability-scanning-and-remediation-with-nessus-essentials)
 
 ## Tools and Technologies
 
 -   Splunk
 -   Wireshark
 -   Kali Linux
--   Snort/Suricata
+-   Nessus
 -   Python
 -   Bash/PowerShell
 -   Linux/Windows administration
@@ -109,3 +110,26 @@ This project demonstrates basic network scanning using the `nmap` command-line t
 ```bash
 nmap -v -sS <target_IP_address>
 ```
+
+## Vulnerability Scanning and Remediation with Nessus Essentials
+
+### Description
+
+Conducted comprehensive vulnerability scans of a virtual network using Nessus Essentials to identify critical security vulnerabilities. Developed a detailed vulnerability report and implemented remediation steps to mitigate identified risks. This project demonstrates my ability to perform vulnerability assessments and improve the security posture of systems.
+
+### Tools Used
+
+-   Nessus Essentials
+-   VirtualBox
+
+### Key Findings
+
+-   Identified critical vulnerabilities, such as outdated software and missing security patches.
+-   Developed a vulnerability report with detailed descriptions and remediation steps.
+-   Successfully remediated identified vulnerabilities and verified the results with re-scans.
+
+### Remediation Process
+
+The remediation process involved patching operating systems, updating vulnerable software, and hardening system configurations. Re-scans were performed to verify that the vulnerabilities were successfully remediated.
+
+
