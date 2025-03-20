@@ -17,9 +17,8 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 -   Wireshark
 -   Kali Linux
 -   Nessus
--   Python
 -   Bash/PowerShell
--   Linux/Windows administration
+-   Nmap
 
 ## Certifications and Training
 
