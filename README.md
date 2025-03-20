@@ -39,8 +39,8 @@ This project involved analyzing a sample web server access log to identify commo
 
 ### Tools Used
 
--   'grep'
--   'awk'
+-   `grep`
+-   `awk`
 
 ### Key Findings
 
@@ -63,6 +63,6 @@ grep "200" access.log | wc -l
 
 ### Description
 
-This project demonstrates basic file integrity monitoring using the sha256sum command-line tool. The goal was to detect unauthorized changes to critical system files by comparing file hashes.
+This project demonstrates basic file integrity monitoring using the `sha256sum` command-line tool. The goal was to detect unauthorized changes to critical system files by comparing file hashes.
 
 
