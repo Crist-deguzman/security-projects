@@ -6,7 +6,7 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 
 ## Projects
 
--   [Project 1 Title](#project-1-title)
+-   [Basic Log Analysis with grep](#basic-log-analysis-with-grep)
 -   [Project 2 Title](#project-2-title)
 -   [Project 3 Title](#project-3-title)
 
@@ -31,23 +31,30 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 
 ---
 
-## Project 1 Title
+## Basic Log Analysis with grep
 
 ### Description
 
-[Detailed description of your project, including the problem, your approach, and the outcome.]
+This project involved analyzing a sample web server access log to identify common HTTP status codes and IP addresses using `grep` and `awk`. The goal was to demonstrate basic log analysis skills.
 
 ### Tools Used
 
--   [List the tools used in this project.]
+-   'grep'
+-   'awk'
 
 ### Key Findings
 
--   [List the key findings or results of your project.]
+-   The log file contained 216 404 errors.
+-   The amount of unique IP addresses that accessed the server were
+    1753
+-   The log file contained 9152 200 OK status codes.
 
-### Screenshots/Diagrams
+### Example Commands
 
-[Embed screenshots or diagrams using Markdown image syntax, e.g., `![Screenshot](images/screenshot1.png)`.]
+```bash
+grep "404" apache.logs | wc -l
+awk '{print $1}' apache.logs | sort -u | wc -l
+grep "200" apache.logs | wc -l
 
 ---
 
