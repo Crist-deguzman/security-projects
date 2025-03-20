@@ -65,4 +65,23 @@ grep "200" access.log | wc -l
 
 This project demonstrates basic file integrity monitoring using the `sha256sum` command-line tool. The goal was to detect unauthorized changes to critical system files by comparing file hashes.
 
+### Tools Used
+
+-   `sha256sum`
+-   `diff`
+
+### Key Findings
+
+-   The `diff` command identified that `files/file1.txt` had been modified.
+-   The hash for `files/file1.txt` in `current_hashes.txt` was different from the hash in `initial_hashes.txt`.
+-   This project demonstrates how file integrity monitoring can be used to detect unauthorized changes to files.
+
+### Example Commands
+
+```bash
+sha256sum files/* > initial_hashes.txt
+echo "Modified content" >> files/file1.txt
+sha256sum files/* > current_hashes.txt
+diff initial_hashes.txt current_hashes.txt
+```
 
