@@ -8,7 +8,7 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 
 -   [Basic Log Analysis with grep](#basic-log-analysis-with-grep)
 -   [File Integrity Monitoring with sha256sum](#file-integrity-monitoring-with-sha256sum)
--   [Project 3 Title](#project-3-title)
+-   [Basic Network Scanning with nmap](#basic-network-scanning-with-nmap)
 
 ## Tools and Technologies
 
@@ -85,3 +85,27 @@ sha256sum files/* > current_hashes.txt
 diff initial_hashes.txt current_hashes.txt
 ```
 
+## Basic Network Scanning with `nmap`
+
+### Description
+
+This project demonstrates basic network scanning using the `nmap` command-line tool. The goal was to identify open ports and services running on a target system.
+
+### Tools Used
+
+-   `nmap`
+
+### Key Findings
+
+-   The `nmap` scan identified the following open ports:
+    -   Port 22 (SSH)
+    -   Port 80 (HTTP)
+    -   Port 9929 (NPING-ECHO)
+    -   Port 31337 (ELITE)
+-   This project demonstrates how `nmap` can be used to identify open ports and services, which is a crucial step in network security assessments.
+
+### Example Commands
+
+```bash
+nmap -v -sS <target_IP_address>
+```
