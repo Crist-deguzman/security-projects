@@ -31,7 +31,7 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 
 ---
 
-## Basic Log Analysis with grep
+## Basic Log Analysis with `grep`
 
 ### Description
 
@@ -59,7 +59,7 @@ grep "200" access.log | wc -l
 
 ---
 
-## File Integrity Monitoring with sha256sum
+## File Integrity Monitoring with `sha256sum`
 
 ### Description
 
