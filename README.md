@@ -52,9 +52,9 @@ This project involved analyzing a sample web server access log to identify commo
 ### Example Commands
 
 ```bash
-grep " 404 " access.log | wc -l
+grep "404" access.log | wc -l
 awk '{print $1}' access.log | sort -u
-grep " 200 " access.log | wc -l
+grep "200" access.log | wc -l
 ```
 
 ---
