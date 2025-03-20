@@ -7,7 +7,7 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 ## Projects
 
 -   [Basic Log Analysis with grep](#basic-log-analysis-with-grep)
--   Simulated Phishing Incident Analysis and Reporting(#simulated-phishing-incident-analysis-and-reporting)
+-   [Simulated Phishing Incident Analysis and Reporting](#simulated-phishing-incident-analysis-and-reporting)
 -   [Project 3 Title](#project-3-title)
 
 ## Tools and Technologies
