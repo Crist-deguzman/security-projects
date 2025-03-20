@@ -7,7 +7,7 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 ## Projects
 
 -   [Basic Log Analysis with grep](#basic-log-analysis-with-grep)
--   [Simulated Phishing Incident Analysis and Reporting](#simulated-phishing-incident-analysis-and-reporting)
+-   [File Integrity Monitoring with sha256sum](#file-integrity-monitoring-with-sha256sum)
 -   [Project 3 Title](#project-3-title)
 
 ## Tools and Technologies
@@ -59,10 +59,10 @@ grep "200" access.log | wc -l
 
 ---
 
-## Simulated Phishing Incident Analysis and Reporting
+## File Integrity Monitoring with sha256sum
 
 ### Description
 
-Conducted a simulated phishing attack in a controlled virtual environment to analyze attack vectors, identify indicators of compromise (IOCs), and develop an incident response report. This project showcases my ability to simulate real-world security incidents, perform log analysis, and provide actionable recommendations.
+This project demonstrates basic file integrity monitoring using the sha256sum command-line tool. The goal was to detect unauthorized changes to critical system files by comparing file hashes.
 
-... (Continue with the rest of the project structure)
+
