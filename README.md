@@ -14,7 +14,7 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 
 -   Splunk
 -   Wireshark
--   Nessus Essentials
+-   Kali Linux
 -   Snort/Suricata
 -   Python
 -   Bash/PowerShell
@@ -51,7 +51,7 @@ This project involved analyzing a sample web server access log to identify commo
 
 ### Example Commands
 
-```bash
+'''bash
 grep "404" apache.logs | wc -l
 awk '{print $1}' apache.logs | sort -u | wc -l
 grep "200" apache.logs | wc -l
