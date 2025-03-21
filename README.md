@@ -10,7 +10,8 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 -   [File Integrity Monitoring with sha256sum](#file-integrity-monitoring-with-sha256sum)
 -   [Basic Network Scanning with nmap](#basic-network-scanning-with-nmap)
 -   [Vulnerability Scanning and Remediation with Nessus Essentials](#vulnerability-scanning-and-remediation-with-nessus-essentials)
-
+-   [Home Network Security Assessment and Hardening]
+  
 ## Tools and Technologies
 
 -   Splunk
@@ -131,4 +132,34 @@ Conducted comprehensive vulnerability scans of a virtual network using Nessus Es
 
 The remediation process involved patching operating systems, updating vulnerable software, and hardening system configurations. Re-scans were performed to verify that the vulnerabilities were successfully remediated.
 
+
+## Home Network Security Assessment and Hardening
+
+### Description
+
+Conducted a comprehensive security assessment of a home network to identify potential vulnerabilities and implemented hardening measures to improve its security posture. This project demonstrates my ability to analyze network security, identify risks, and apply practical security configurations.
+
+### Tools Used
+
+-   nmap
+-   Linux
+-   VirtualBox
+
+### Key Findings
+
+-   No default passwords were identified.
+-   Discovered open and unused ports on IoT devices.
+-   No vulnerabilites were found.
+
+### Hardening Measures Implemented
+
+-   Closed unnecessary open ports on IoT devices.
+-   Ensured all OS and applications were up to date.
+
+### Example Commands
+
+```bash
+nmap -v -sV -O <ip_addr>
+nmap --script vuln <ip_addr>
+```
 
