@@ -137,7 +137,7 @@ The remediation process involved patching operating systems, updating vulnerable
 
 ### Description
 
-Conducted a comprehensive security assessment of a home network to identify potential vulnerabilities and implemented hardening measures to improve its security posture. This project demonstrates my ability to analyze network security, identify risks, and apply practical security configurations.
+Conducted a comprehensive security assessment on my home network to identify potential vulnerabilities and implemented hardening measures to improve its security posture. This project demonstrates my ability to analyze network security, identify risks, and apply practical security configurations.
 
 ### Tools Used
 
