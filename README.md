@@ -10,7 +10,7 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 -   [File Integrity Monitoring with sha256sum](#file-integrity-monitoring-with-sha256sum)
 -   [Basic Network Scanning with nmap](#basic-network-scanning-with-nmap)
 -   [Vulnerability Scanning and Remediation with Nessus Essentials](#vulnerability-scanning-and-remediation-with-nessus-essentials)
--   [Home Network Security Assessment and Hardening]
+-   [Home Network Security Assessment and Hardening](#home-network-security-assessment-and-hardening)
   
 ## Tools and Technologies
 
