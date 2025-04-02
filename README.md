@@ -163,3 +163,82 @@ nmap -v -sV -O <ip_addr>
 nmap --script vuln <ip_addr>
 ```
 
+# Enhanced CyberPhish Educational Simulation
+
+## Description
+
+This project is an enhanced educational phishing simulation designed to demonstrate the mechanics of phishing attacks and promote awareness of cybersecurity best practices. It builds upon the CyberPhish concept, incorporating modular code, dynamic templating, and a local web server to improve the simulation's realism and effectiveness.
+
+**Disclaimer:** This project is intended for educational and ethical testing purposes only. Do not use this tool for any illegal or malicious activities.
+
+## Features
+
+* **Modular Code:** Organized into separate Python modules for better maintainability and scalability.
+* **Jinja2 Templating:** Uses Jinja2 for dynamic email template generation, allowing for personalized phishing scenarios.
+* **Local Web Server (Python `http.server`):** Hosts the "phished" confirmation page, enabling realistic simulation of external phishing links.
+* **ngrok Integration:** Exposes the local web server to the internet, providing a public URL for the phishing link.
+* **Mailtrap Integration:** Uses Mailtrap for safe email testing and simulation.
+* **Command-Line Arguments:** Allows specifying the recipient email address when running the script.
+* **Configuration File (`config.json`):** Stores Mailtrap credentials and other configurable parameters.
+* **HTML Email Rendering:** Correctly formats the email as HTML, ensuring it is displayed as intended in email clients.
+* **Enhanced Error Handling:** Implements robust error handling to catch exceptions and provide informative error messages.
+* **Realistic Phishing Scenarios:** Provides a foundation for creating more complex and tailored phishing simulations.
+* **Clear Educational Content:** The "phished" confirmation page provides details about phishing attacks and preventative measures.
+
+## Getting Started
+
+### Prerequisites
+
+* Python 3.x installed on your system.
+* Git installed on your system.
+* Mailtrap account (for email testing).
+* ngrok (to expose the local web server).
+* Jinja2 library (install with `pip install Jinja2`).
+
+### Installation
+
+1.  Install CyberPhish:
+
+    ```bash
+    pip install colorama
+    git clone https://lnkd.in/dcHU8ivq
+    cd CyberPhish
+    pip install -r requirements.txt
+    python3 CyberPhish.py
+    ```
+
+2.  Install the required Python library:
+
+    ```bash
+    pip install Jinja2
+    ```
+
+3.  Configure `config.json`:
+    * Open `config.json` and replace the placeholders with your Mailtrap credentials and the ngrok URL.
+    * Start the local web server: `python -m http.server 8000`
+    * Start ngrok: `ngrok http 8000`
+    * Copy the ngrok forwarding URL, and add `/phished.html` to the end.
+    * Update the `phished_url` value in your `config.json` file.
+
+### Usage
+
+1.  Run the `main.py` script, providing the recipient email address as a command-line argument:
+
+    ```bash
+    python main.py recipient@example.com
+    ```
+
+2.  Check your Mailtrap inbox to view the simulated phishing email.
+3.  Click the link in the email to see the "phished" confirmation page.
+
+## Configuration (`config.json`)
+
+```json
+{
+  "mailtrap_username": "YOUR_MAILTRAP_USERNAME",
+  "mailtrap_password": "YOUR_MAILTRAP_PASSWORD",
+  "mailtrap_smtp_server": "smtp.mailtrap.io",
+  "mailtrap_smtp_port": 2525,
+  "sender_email": "phishing@example.com",
+  "phished_url": "YOUR_NGROK_URL/phished.html"
+}
