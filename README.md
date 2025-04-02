@@ -11,6 +11,7 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 -   [Basic Network Scanning with nmap](#basic-network-scanning-with-nmap)
 -   [Vulnerability Scanning and Remediation with Nessus Essentials](#vulnerability-scanning-and-remediation-with-nessus-essentials)
 -   [Home Network Security Assessment and Hardening](#home-network-security-assessment-and-hardening)
+-   [Educational Phishing Simulation](#educational-phishing-simulation)
   
 ## Tools and Technologies
 
@@ -18,8 +19,9 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 -   Wireshark
 -   Kali Linux
 -   Nessus
--   Bash/PowerShell
+-   CyberPhish
 -   Nmap
+-   Python
 
 ## Certifications and Training
 
@@ -163,7 +165,7 @@ nmap -v -sV -O <ip_addr>
 nmap --script vuln <ip_addr>
 ```
 
-# Enhanced CyberPhish Educational Simulation
+# Educational Phishing Simulation
 
 ## Description
 
