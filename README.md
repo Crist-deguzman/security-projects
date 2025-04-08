@@ -263,10 +263,10 @@ Capture live network traffic from your computer, log that data using Zeek, and a
 
 ### Step 1: Capturing Traffic with Wireshark
 
-1.  **I opened Wireshark** 
-2.  **I selected my Wi-Fi interface (en0)** as the network interface to monitor.
-3.  **I started the capture** and then spent about 30-60 seconds browsing various websites to generate some network activity.
-4.  **I stopped the capture** once I had gathered enough traffic.
+1.  **Run Wireshark** 
+2.  **Select my Wi-Fi interface (en0)** as the network interface to monitor.
+3.  **Start the capture** and then spent about 30-60 seconds browsing various websites to generate some network activity.
+4.  **Stop the capture** once I had gathered enough traffic.
 5.  **To focus on relevant data, I applied the filter `http || dns`** in Wireshark. This helped to clean up the view and concentrate on web and DNS-related packets.
 6.  **Finally, I saved the captured data as `test_capture.pcapng` on my Desktop.**
 
@@ -311,6 +311,6 @@ Capture live network traffic from your computer, log that data using Zeek, and a
         * The type of DNS query (e.g., A, AAAA) (`qtype_name`)
         * The resolved IP address (if successful) (`answers`)
 
-## 🚀 What I Learned and Future Steps
+## What I Learned and Future Steps
 
 Through this exercise, I gained a basic understanding of how Wireshark can capture network traffic and how Zeek can transform that raw data into structured logs for analysis. I was able to identify the source and destination of network connections and see the DNS queries my system made while browsing.
