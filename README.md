@@ -1,4 +1,4 @@
-# security-projects
+# Security Projects
 
 ## Introduction
 
@@ -12,6 +12,7 @@ Welcome to my portfolio! I'm an Aspiring Cybersecurity Analyst passionate about 
 -   [Vulnerability Scanning and Remediation with Nessus Essentials](#vulnerability-scanning-and-remediation-with-nessus-essentials)
 -   [Home Network Security Assessment and Hardening](#home-network-security-assessment-and-hardening)
 -   [Educational Phishing Simulation](#educational-phishing-simulation)
+-   [Wireshark Traffic Analysis Lab](#wireshark-traffic-analysis-lab)
   
 ## Tools and Technologies
 
@@ -244,3 +245,72 @@ This project is an enhanced educational phishing simulation designed to demonstr
   "sender_email": "phishing@example.com",
   "phished_url": "YOUR_NGROK_URL/phished.html"
 }
+```
+
+# Wireshark Traffic Analysis Lab
+
+**A hands-on project demonstrating basic network traffic analysis using Wireshark and Zeek, mimicking a Tier 1 SOC Analyst workflow.**
+
+## Objective
+
+Capture live network traffic from your computer, log that data using Zeek, and analyze it to understand network connections and DNS queries.
+
+## Tools Used
+
+* **Wireshark:** For capturing network packets.
+* **Zeek:** For parsing raw packet captures into structured logs.
+* **Terminal:** For executing commands and exploring the generated logs.
+
+### Step 1: Capturing Traffic with Wireshark
+
+1.  **I opened Wireshark** 
+2.  **I selected my Wi-Fi interface (en0)** as the network interface to monitor.
+3.  **I started the capture** and then spent about 30-60 seconds browsing various websites to generate some network activity.
+4.  **I stopped the capture** once I had gathered enough traffic.
+5.  **To focus on relevant data, I applied the filter `http || dns`** in Wireshark. This helped to clean up the view and concentrate on web and DNS-related packets.
+6.  **Finally, I saved the captured data as `test_capture.pcapng` on my Desktop.**
+
+### Step 2: Parse with Zeek
+
+1.  **Open Terminal:** 
+2.  **Create and move into a Zeek logs folder:** Execute the following command to create a directory for Zeek logs and navigate into it:
+    ```bash
+    mkdir ~/zeek_logs && cd ~/zeek_logs
+    ```
+3.  **Run Zeek on your capture file:** Use the following command to process the Wireshark capture file with Zeek:
+    ```bash
+    zeek -r ~/Desktop/test_capture.pcapng
+    ```
+    * **Note:** Ensure that Zeek is installed on your system. If not, you may need to install it using your preferred package manager.
+4.  **View the logs created:** List the files in the `~/zeek_logs` directory using the `ls` command. You should see several log files, including:
+    * `conn.log`: Contains information about network connections.
+    * `dns.log`: Contains details about DNS queries and responses.
+    * `http.log`: Contains information about HTTP traffic.
+
+### Step 3: Analyze the Logs
+
+1.  **Explore `conn.log`:**
+    * Use the following command to view the contents of the connection log, allowing you to scroll through it:
+        ```bash
+        cat conn.log | less
+        ```
+    * Inside `conn.log`, you can observe key details about network connections, such as:
+        * Source and destination IP addresses (`id.orig_h`, `id.resp_h`)
+        * Source and destination port numbers (`id.orig_p`, `id.resp_p`)
+        * The network protocol used (`proto`)
+        * The duration of the connection (`duration`)
+
+2.  **Explore `dns.log`:**
+    * Use the following command to view the contents of the DNS log:
+        ```bash
+        cat dns.log | less
+        ```
+    * Inside `dns.log`, you can find information about DNS queries, including:
+        * The timestamp of the query (`ts`)
+        * The domain name queried (`query`)
+        * The type of DNS query (e.g., A, AAAA) (`qtype_name`)
+        * The resolved IP address (if successful) (`answers`)
+
+## 🚀 What I Learned and Future Steps
+
+Through this exercise, I gained a basic understanding of how Wireshark can capture network traffic and how Zeek can transform that raw data into structured logs for analysis. I was able to identify the source and destination of network connections and see the DNS queries my system made while browsing.
